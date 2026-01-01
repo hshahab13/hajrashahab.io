@@ -1,0 +1,425 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hajra Shahab</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+  <!-- Scripts -->
+<script src="ticker.js"></script>
+<script src="research-filter.js"></script>
+<script src="name_change.js" defer></script>
+
+<body>
+  <!-- Floating particles -->
+  <div class="particles"></div>
+  <div class="top-strip"></div>
+
+  <!-- Header Strip -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Hajra Shahab</a>
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#news" class="nav-link">News</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#resources/cv_recent.pdf" class="nav-link">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- Main content -->
+<main>
+  <!-- Profile Section -->
+  <section class="profile-container"> 
+    <div class="profile-grid" id ="about">
+      <!-- Profile Text -->
+      <div class="profile-text">
+        <h1 class="name" id="dynamic-name"></h1>
+        <p>
+          I am a first-year Ph.D. student in the School of City and Regional Planning (SCaRP) at
+          Georgia Institute of Technology. I work as a Graduate Research Assistant at the
+          <a href="https://resilience.research.gatech.edu/">Center for Urban Resilience and Analytics (CURA)</a>
+          with the Resilient and Equitable Mobility Analytics and Planning (REMAP) research group,
+          advised by Dr.
+          <a href="https://scholar.google.com/citations?user=Zx4Sk7YAAAAJ&hl=en&inst=3203679203499159833">Rounaq Basu</a>.
+        </p>
+        <p>
+          I earned my MS in Public Policy and Management with a Data Analytics specialization (MSPPM-DA) from Carnegie Mellon University (2022) 
+          and a BSc in Economics with a minor in Public Management from Lahore University of Management Sciences (2018). 
+          Prior to beginning my doctoral studies, I worked as a Senior Transportation Economics and Data Science Analyst in Boston, MA, 
+          where I applied economic and data-driven analyses to support transportation planning and mobility projects for 
+          state departments of transportation, federal agencies, and other public-sector organizations.
+        </p>
+
+        <!-- Contact Icons -->
+        <div class="contact-icons">
+          <a href="mailto:hajrashahab05@gmail.com" aria-label="Email"><img src="images/email_logo.png" alt="Email"></a>
+          <a href="https://scholar.google.com/citations?user=5VVGwfMAAAAJ&hl=en&inst=3203679203499159833" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><img src="images/google_scholar.png" alt="Google Scholar"></a>
+          <a href="https://github.com/hshahab13" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="images/github-mark.png" alt="GitHub"></a>
+          <a href="https://orcid.org/0009-0008-8466-7561" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><img src="images/orcid.webp" alt="ORCID"></a>
+          <a href="data/Hajra_Shahab_CV.pdf" aria-label="Curriculum Vitae"><img src="images/cv.png" alt="CV"></a>
+          <a href="https://www.linkedin.com/in/hajrashahab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="profile-image">
+        <img src="images/hajra_shahab.jpg" alt="profile photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Overview Section -->
+  <section class="research-overview">
+    <div class="research-container"></div>
+      <h2>Research</h2>
+      <p>
+        My research spans across four interconnected areas:
+        <br>1. Travel Behavior Analysis
+        <br>2. Urban Computing and Networks
+        <br>3. Advanced Methods and Modeling (Causal Inference & Econometrics)
+        <br>4. Land Use & New Mobility Adoption
+      </p>
+      <p>
+        My work focuses on analyzing individual travel patterns and applying computational
+        methods to address critical transportation equity challenges, including climate
+        injustice and safety. Some highlighted research is shared below.
+      </p>
+    </div>
+  </section>
+</main>
+
+  <!-- News Section -->
+<!-- News Section -->
+<div class="news-ticker-container" id="news">
+  <h2>News</h2>
+
+  <div class="news-ticker-wrapper">
+    <div class="news-ticker" id="news-ticker">
+
+      <div class="news-item">
+        <span class="news-date">Jan 2026</span>
+        <span class="news-text">
+          Poster Session at 105th Transportation Research Board Annual Meeting (TRBAM)
+          “Hot and Bothered: Exploring the Effect of Extreme Heat on Taxi and TNC Usage in New York City”
+        </span>
+      </div>
+
+      <div class="news-item">
+        <span class="news-date">Oct 2025</span>
+        <span class="news-text">
+          Talk at Association of Collegiate Schools of Planning (ACSP) Annual Meeting
+          “How do mobility patterns affect extreme heat exposure while walking and biking?”
+        </span>
+      </div>
+
+      <div class="news-item">
+        <span class="news-date">Aug 2025</span>
+        <span class="news-text">
+          Joined REMAP group at the Center for Urban Resilience (CURA) as a Graduate Research Assistant.
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>
+ 
+<!-- ===== Research Section Container (Paper Style) ===== -->
+<div class="research-section-container" id = "research">
+  <h2>Highlighted Research</h2>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+  <button class="filter-btn default active" data-topic="all">All</button>
+  <button class="filter-btn travel-behavior" data-topic="travel-behavior">
+    Travel Behavior
+  </button>
+  <button class="filter-btn urban-computing" data-topic="urban-computing">
+    Urban Computing
+  </button>
+  <button class="filter-btn modeling" data-topic="modeling">
+    Advanced Modeling
+  </button>
+  <button class="filter-btn econometrics" data-topic="econometrics">
+    Econometrics
+  </button>
+</div>
+
+<div class="filter-group">
+  <button class="filter-btn default active" data-filter="type" data-value="all">
+    All Types
+  </button>
+  <button class="filter-btn" data-filter="type" data-value="paper">
+    Paper
+  </button>
+  <button class="filter-btn" data-filter="type" data-value="poster">
+    Poster
+  </button>
+  <button class="filter-btn" data-filter="type" data-value="conference">
+    Conference
+  </button>
+</div>
+
+<div class="filter-group">
+  <button class="filter-btn default active" data-filter="year" data-value="all">
+    All Years
+  </button>
+  <button class="filter-btn" data-filter="year" data-value="2026">
+    2026
+  </button>
+  <button class="filter-btn" data-filter="year" data-value="2025">
+    2025
+  </button>
+</div>
+
+<!-- ===== Research Tiles Grid ===== -->
+<div class="research-grid">
+
+  <!-- Tile 1 -->
+  <div class="research-tile"
+       data-topic="travel-behavior"
+       data-type="paper"
+       data-year="2024">
+
+    <span class="tile-tag">Travel Behavior</span>
+    <span class="meta-chip">Paper</span>
+    <span class="meta-chip">2025</span>
+
+    <div class="image-container">
+      <img src="images/newyork_before.png"
+           alt="New York City before extreme heat"
+           class="before-image"
+           loading="lazy">
+      <img src="images/newyork_after.webp"
+           alt="New York City during extreme heat"
+           class="after-image"
+           loading="lazy">
+    </div>
+
+    <h3>
+      <a href="https://github.com/remap-research-group/no-heat-nyc/tree/main/NO-HEAT-clean"
+         target="_blank"
+         rel="noopener">
+        Exploring the Effect of Extreme Heat on Taxi/TNC Usage in New York City
+      </a>
+    </h3>
+
+    <p class="authors">
+      <a href="https://scholar.google.com/citations?user=Zx4Sk7YAAAAJ&hl=en&inst=3203679203499159833">
+        Rounaq Basu,
+      </a>
+      <strong>
+        <a href="https://scholar.google.com/citations?user=5VVGwfMAAAAJ&hl=en&inst=3203679203499159833">
+          Hajra Shahab
+        </a>
+      </strong> and
+      <span>Shambhavi Sinha</span>
+    </p>
+
+    <p>
+      <em>Transportation Research Part D: Transport and Environment</em>, 2025
+    </p>
+
+    <p>
+      As humans continue to adapt to rising temperatures, we explore how it leads to shifts in daily travel patterns.
+    </p>
+
+    <p class="links">
+      <a href="https://github.com/remap-research-group/no-heat-nyc/tree/main/NO-HEAT-clean"
+         target="_blank"
+         rel="noopener">
+        <img src="images/code_icon.png"
+             alt="GitHub repository icon"
+             class="link-icon">
+        <strong>Project Code</strong>
+      </a>
+    </p>
+  </div>
+
+  <!-- Tile 2
+  <div class="research-tile"
+       data-topic="urban-computing"
+       data-type="paper"
+       data-year="2025">
+
+    <span class="tile-tag">Urban Computing</span>
+    <span class="meta-chip">Paper</span>
+    <span class="meta-chip">2025</span>
+
+    <div class="image-container">
+      <img src="images/foundationmodel_before.png"
+           alt="Urban network baseline"
+           class="before-image"
+           loading="lazy">
+      <img src="images/foundationmodel_after.png"
+           alt="Urban network enhanced"
+           class="after-image"
+           loading="lazy">
+    </div>
+
+    <h3>
+      <a href="#">
+        Urban Network Analysis Project
+      </a>
+    </h3>
+    <p class="authors">
+      <a href="#">Hajra Shahab</a>,
+      <strong>Rounaq Basu</strong>
+    </p>
+
+    <p>
+      <em>Transportation Research Part C: Emerging Technologies</em>, 2025
+    </p>
+
+    <p>
+      Description of the urban computing project, focusing on network structure, spatial interactions, and policy-relevant insights.
+    </p>
+
+    <p class="links">
+      <a href="https://github.com/remap-research-group/no-heat-nyc/tree/main/NO-HEAT-clean"
+         target="_blank"
+         rel="noopener">
+        <img src="images/code_icon.png"
+             alt="GitHub repository icon"
+             class="link-icon">
+        <strong>Project Code</strong>
+      </a>
+    </p>
+  </div> -->
+
+  <!-- Tile 3 -->
+  <div class="research-tile"
+       data-topic="modeling"
+       data-type="paper"
+       data-year="2025">
+
+    <span class="tile-tag">Advanced Modeling</span>
+    <span class="meta-chip">Paper</span>
+    <span class="meta-chip">2025</span>
+
+    <div class="image-container">
+      <img src="images/robotaxi_before.webp"
+           alt="Robotaxi baseline scenario"
+           class="before-image"
+           loading="lazy">
+      <img src="images/robotaxi_after.jpg"
+           alt="Robotaxi enhanced scenario"
+           class="after-image"
+           loading="lazy">
+    </div>
+
+    <h3>
+      <a href="#">
+        Understanding Different Mode Choice Groups (Robotaxi vs. Human Driver) for Long-Distance Commutes
+      </a>
+    </h3>
+
+    <!-- <p class="authors">
+      <a href="#">Author 1</a>,
+      <strong>Author 2</strong>
+    </p> -->
+
+    <!-- <p>
+      <em>Travel Behavior and Society</em>, 2025
+    </p>
+
+    <p>
+      Description of the modeling project, focusing on simulations and predictive insights.
+    </p>
+
+    <p class="links">
+      <a href="#">
+        <img src="images/code_icon.png"
+             alt="GitHub repository icon"
+             class="link-icon">
+        <strong>Project Code</strong>
+      </a>
+    </p> -->
+  </div>
+</div>
+</div>
+
+<!-- ===== Miscellanea Section Container (Paper Style) ===== -->
+<div class="misc-section-container">
+  <h2>Miscellaneous</h2>
+
+  <table class="misc-table">
+
+    <!-- Selected Awards -->
+    <tr>
+      <td class="misc-label">
+        <div class="colored-box box-awards">
+          <h3>Selected Awards</h3>
+        </div>
+      </td>
+      <td class="misc-content">
+        <ul class="no-bullets">
+          <li>
+            <a href="https://mobility21.cmu.edu/whats_happening/women-in-transportation-fellow-hajra-shahab-graduates-and-awarded-the-barbara-jenkins-service-award/" target="_blank" rel="noopener">
+              Barbara Jenkins Service Award, Carnegie Mellon University (2022)
+            </a>
+          </li>
+          <li>
+            <a href="https://mobility21.cmu.edu/whats_happening/mobility21-utc-welcomes-new-traffic21-women-in-transportation-fellow-hajra-shahab/" target="_blank" rel="noopener">
+              Women in Transportation Fellowship, Traffic 21 Institute (2020- 2022)
+            </a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Academic Services -->
+    <tr>
+      <td class="misc-label">
+        <div class="colored-box box-service">
+          <h3>Academic Services</h3>
+        </div>
+      </td>
+      <td class="misc-content">
+        <ul class="no-bullets">
+          <li>
+            <a href="https://www.nationalacademies.org/events/886" target="_blank" rel="noopener">
+              Conference Reviewer - Transportation Research Board Annual Meeting (TRBAM)
+            </a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Professional Activities -->
+    <tr>
+      <td class="misc-label">
+        <div class="colored-box box-professional">
+          <h3>Professional Activities</h3>
+        </div>
+      </td>
+      <td class="misc-content">
+        <ul class="no-bullets">
+          <li>
+            <a href="https://mobility21.cmu.edu/whats_happening/women-in-transportation-fellow-hajra-shahab-graduates-and-awarded-the-barbara-jenkins-service-award/" target="_blank" rel="noopener">
+              Member - Women in Transportation Seminar (WTS- Atlanta)
+            </a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
+  <!-- Site Credit -->
+  <p class="site-credit">
+    Template adapted from
+    <a href="https://jonbarron.info/" target="_blank" rel="noopener">1</a> and
+    <a href="https://minho.me/" target="_blank" rel="noopener">2</a>.
+  </p>
+</section>
+
+</body>
+</html>
